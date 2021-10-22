@@ -46,7 +46,7 @@ const sketch = () => {
 
       context.fillStyle = 'black';
       context.beginPath();
-      context.rect(-w * 0.5, -h * 0.5, w, h,);
+      context.rect(-w * 0.5,random.range(0,-h * 0.5) , w, h,);
       context.fill();
       context.restore();
 
@@ -56,7 +56,7 @@ context.rotate(-angle);
 context.lineWidth = random.range(5, 20);
 
 context.beginPath();
-context.arc(0, 0, radius,slice * -0.3, slice * 0.3 );
+context.arc(0, 0, radius * random.range(0.7,1.3),slice * -0.3, slice * 0.3 );
 context.stroke ();  
 
 context.restore();
