@@ -52,7 +52,8 @@ const sketch = () => {
 
 context.save();
 context.translate(cx, cy);
-context.rotate(-angle)
+context.rotate(-angle);
+context.lineWidth = 20;
 
 context.beginPath();
 context.arc(0, 0, radius,slice * -0.3, slice * 0.3 );
