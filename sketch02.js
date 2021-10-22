@@ -17,7 +17,7 @@ const sketch = () => {
     const cx = width * 0.5;
     const cy = height * 0.5;
     let x,y;
-    
+
     const w = width * 0.01;
     const h = height * 0.1;
 
@@ -33,7 +33,7 @@ const sketch = () => {
 
       context.save();
       context.translate(x,y);
-      context.rotate(angle);
+      context.rotate(-angle);
       context.fillStyle = 'black';
       context.beginPath();
       context.rect(-w * 0.5, -h * 0.5, w, h,);
