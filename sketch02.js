@@ -28,7 +28,7 @@ const sketch = () => {
     const w = width * 0.01;
     const h = height * 0.1;
 
-    const num = 12; 
+    const num = 9; 
     const radius = width * 0.3;
 
     for (let i = 0; i < num; i++){
@@ -56,7 +56,7 @@ context.rotate(-angle);
 context.lineWidth = random.range(5, 20);
 
 context.beginPath();
-context.arc(0, 0, radius * random.range(0.7,1.3),slice * random.range(0,-5), slice * random.range(0,5));
+context.arc(0, 0, radius * random.range(0.7,1.3),slice * random.range(1,-5), slice * random.range(1,5));
 context.stroke ();  
 
 context.restore();
