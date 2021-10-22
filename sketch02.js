@@ -4,6 +4,10 @@ const settings = {
   dimensions: [ 1080, 1080 ]
 };
 
+const degToRad = (degrees) => {
+return degrees / 180 * Math.PI;
+}
+
 const sketch = () => {
   return ({ context, width, height }) => {
     context.fillStyle = 'white';
@@ -17,7 +21,7 @@ const sketch = () => {
 
     context.save();
     context.translate(x,y);
-    context.rotate(0.3);
+    context.rotate(degToRad(45));
     context.fillStyle = 'black';
     context.beginPath();
     context.rect(-w * 0.5, -h * 0.5, w, h,);
