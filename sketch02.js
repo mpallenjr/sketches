@@ -34,6 +34,9 @@ const sketch = () => {
       context.save();
       context.translate(x,y);
       context.rotate(-angle);
+      context.scale(Math.random() * 3, 1); 
+
+
       context.fillStyle = 'black';
       context.beginPath();
       context.rect(-w * 0.5, -h * 0.5, w, h,);
