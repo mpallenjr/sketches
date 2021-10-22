@@ -16,17 +16,22 @@ const sketch = () => {
 
     const x = width * 0.5;
     const y = height * 0.5;
-    const w = width * 0.30;
-    const h = height * 0.30;
+    const w = width * 0.01;
+    const h = height * 0.1;
 
-    context.save();
-    context.translate(x,y);
-    context.rotate(degToRad(45));
-    context.fillStyle = 'black';
-    context.beginPath();
-    context.rect(-w * 0.5, -h * 0.5, w, h,);
-    context.fill();
-    context.restore();
+    const num = 12; 
+
+    for (let i = 0; i < num; i++){
+      context.save();
+      context.translate(x,y);
+      context.rotate(degToRad(45));
+      context.fillStyle = 'black';
+      context.beginPath();
+      context.rect(-w * 0.5, -h * 0.5, w, h,);
+      context.fill();
+      context.restore();
+    }
+    
     
   };
 };
