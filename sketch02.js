@@ -9,14 +9,20 @@ const sketch = () => {
     context.fillStyle = 'white';
     context.fillRect(0, 0, width, height);
 
-    const x = 0;
-    const y = 0;
+
+    const x = width * 0.5;
+    const y = height * 0.5;
     const w = width * 0.30;
     const h = height * 0.30;
+
+    context.save();
+    context.translate(x,y);
+    context.rotate(0.3);
     context.fillStyle = 'black';
     context.beginPath();
-    context.rect(x, y, w, h,);
+    context.rect(-w * 0.5, -h * 0.5, w, h,);
     context.fill();
+    context.restore();
     
   };
 };
