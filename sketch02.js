@@ -56,7 +56,7 @@ context.rotate(-angle);
 context.lineWidth = random.range(5, 20);
 
 context.beginPath();
-context.arc(0, 0, radius * random.range(0.7,1.3),slice * -0.3, slice * 0.3 );
+context.arc(0, 0, radius * random.range(0.7,1.3),slice * random.range(0,-5), slice * random.range(0,5));
 context.stroke ();  
 
 context.restore();
