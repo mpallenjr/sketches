@@ -55,7 +55,7 @@ context.translate(cx, cy);
 context.rotate(-angle)
 
 context.beginPath();
-context.arc(0, 0, radius,0, slice );
+context.arc(0, 0, radius,slice * -0.3, slice * 0.3 );
 context.stroke ();  
 
 context.restore();
